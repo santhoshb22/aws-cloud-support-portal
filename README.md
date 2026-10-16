@@ -89,6 +89,10 @@ Set `APP_ENV=aws` only when you intentionally want to use the AWS SDK integratio
 
 See [docs/deployment.md](docs/deployment.md). Review the commands and resource settings before running them. AWS services may incur charges; this project follows a **$0-extra-cost-first** approach. Keep EC2 and RDS stopped when not working, and check billing before enabling paid networking or monitoring features.
 
+## Screenshots and evidence
+
+The [`screenshots/`](screenshots/) folder is reserved for real, sanitized evidence captured after each feature is verified. See its README for the evidence checklist and redaction rules. No screenshot should imply an untested feature is complete.
+
 ## Security
 
 - Never commit `.env`, credentials, private keys, database passwords, real endpoints, account IDs, or unredacted screenshots.
@@ -100,6 +104,10 @@ See [docs/deployment.md](docs/deployment.md). Review the commands and resource s
 ## Automated checks
 
 A GitHub Actions workflow compiles the Python source and runs basic route tests on pushes and pull requests. The workflow result is shown in the badge above.
+
+## Project completion standard
+
+This repository will remain marked **in progress** until the advertised functionality has been implemented and verified end to end. The final README and resume description will be updated only after the relevant tests pass and evidence is captured. A network-level TCP success is not the same as a successful database login or SQL query.
 
 ## Skills demonstrated
 
