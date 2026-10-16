@@ -1,5 +1,7 @@
 # AWS Cloud Support Portal
 
+[![Application checks](https://github.com/santhoshb22/aws-cloud-support-portal/actions/workflows/tests.yml/badge.svg)](https://github.com/santhoshb22/aws-cloud-support-portal/actions/workflows/tests.yml)
+
 A hands-on cloud support portfolio project focused on practical AWS infrastructure, application health checks, troubleshooting, and secure connectivity.
 
 **Status:** Learning project in progress. This repository documents verified work separately from planned enhancements.
@@ -94,6 +96,10 @@ See [docs/deployment.md](docs/deployment.md). Review the commands and resource s
 - Keep RDS private; allow inbound PostgreSQL only from the application security group.
 - Do not expose operational endpoints publicly without authentication and network restrictions.
 - Review AWS billing and resource state after each lab session.
+
+## Automated checks
+
+A GitHub Actions workflow compiles the Python source and runs basic route tests on pushes and pull requests. The workflow result is shown in the badge above.
 
 ## Skills demonstrated
 
